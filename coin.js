@@ -5,7 +5,7 @@ fetch(URL)
 })
 .then((data) => {
 
-    for (let i = 0; i < 10 ; i++) {
+    for (let i = 0; i < 100 ; i++) {
         var main = document.getElementById('main');
         var card = document.createElement('div');
         card.setAttribute('id','card');
