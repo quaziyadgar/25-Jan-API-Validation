@@ -45,7 +45,7 @@ button{
   }
   
   .form-control i {
-    position: absolute;
+    /* position: absolute; */
     top: 72px;
     right: 170px;
     /* visibility: hidden; */
