@@ -29,4 +29,7 @@ fetch(URL)
         card.appendChild(p5);
         main.appendChild(card);
     }
+})
+.catch((error)=>{
+    main.innerText = "Error : "+error;
 });

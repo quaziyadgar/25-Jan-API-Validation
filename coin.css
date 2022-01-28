@@ -22,22 +22,25 @@ main{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
 }
 #card{
     margin: 10px;
     background-color: rgb(88, 223, 61);
-    /* width: 250px; */
+    width: 250px;
     /* height: 150px; */
     border: 2px solid black;
     border-radius: 15px;
     box-shadow: 5px 10px rgb(164, 16, 223);
     padding: 10px;
     cursor: pointer;
+    transition: .2s;
 }
 #card:hover{
     background-color: blueviolet;
     /* width: 270px; */
     /* height: 140px; */
     color: white;
-    font-size: 17px;
+    font-size: 15px;
+    box-shadow: none;
 }
