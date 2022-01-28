@@ -9,30 +9,42 @@ form{
     text-align: center;
     padding: 50px;
     background-image: linear-gradient(120deg, rgb(17, 247, 55) , purple);
-    position: relative;
+    /* position: relative; */
 }
 form input{
     border-radius: 10px;
     border: none;
     padding-left: 10px;
-    height: 20px;
+    height: 30px;
+    width: 250px;
     display: block;
     margin: 0 auto 0 auto;
     outline: none;
 }
 form label{
     display: flex;
-    position: relative;
-    top: 20px;
-    right: 15px;
-    color: white;
+    /* position: relative; */
+    /* top: 0px; */
+    /* right: 15px; */
+    margin-left: 60px;
+    /* font-size: 20px; */
 }
 button{
     margin-top: 10px;
+    background-color: #2bb344;
+    padding: 5px 10px;
+    width: 250px;
+    border-radius: 10px;
+}
+
+.form-control{
+  position: relative;
+  padding: 10px;
 }
 
 .form-control.success input {
     border-color: #2bb344;
+    border: 2px solid #2bb344;
   }
   
   .form-control.success i.fa-check-circle {
@@ -41,19 +53,20 @@ button{
   }
   
   .form-control.failure input {
-    border-color: #f45f57;
+    border-color: #f00;
+    border: 2px solid red;
   }
   
   .form-control i {
-    /* position: absolute; */
-    top: 72px;
-    right: 170px;
-    /* visibility: hidden; */
+    position: absolute;
+    top: 37px;
+    right: 75px;
+    visibility: hidden;
   }
   
   small {
-    color: #f45f57;
-    /* visibility: hidden; */
+    color: #f00;
+    visibility: hidden;
   }
   
   .form-control.failure small {
@@ -61,6 +74,6 @@ button{
   }
   
   .form-control.failure i.fa-exclamation-circle {
-    color: #f45f57;
+    color: #f00;
     visibility: visible;
   }

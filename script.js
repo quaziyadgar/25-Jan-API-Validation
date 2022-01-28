@@ -49,6 +49,9 @@ function checkAge(element) {
     if (ageValue === "") {
         setError(element, "Email cannot be empty");
     }
+    else if (ageValue<5||ageValue>99) {
+        setError(element, "Not a valid range(5-99)")
+    }
     else {
         onSuccess(element);
     }
@@ -63,14 +66,14 @@ function checkPassword(element) {
     else {
         var flag = true;
         for ( var i = 0 ; i<specialCharacter.length; i++) {
-            if (!passwordValue.incudes(specialCharacter[i])) {
+            if (!passwordValue.includes(specialCharacter[i])) {
                 flag = false;
             }
             if (flag) {
                 onSuccess(element);
             } 
             else {
-                setError(element, "password should contain '(', '@', '#'");
+                setError(element, "password should contain (, @, #");
             }
         }
     }
@@ -97,4 +100,5 @@ function checkPassword(element) {
   function onSuccess(element) {
     var formControl = element.parentElement;
     formControl.className = "form-control success";
+    formControl.querySelector("small").innerText = "";
   }
