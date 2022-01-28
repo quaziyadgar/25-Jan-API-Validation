@@ -47,7 +47,7 @@ function isEmail(email) {
 function checkAge(element) {
     var ageValue = element.value;
     if (ageValue === "") {
-        setError(element, "Email cannot be empty");
+        setError(element, "Age cannot be empty");
     }
     else if (ageValue<5||ageValue>99) {
         setError(element, "Not a valid range(5-99)")
